@@ -1,0 +1,61 @@
+{
+  "name": "claude-code-turbocharge",
+  "version": "1.0.0",
+  "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
+  "author": "gongdol",
+  "license": "MIT",
+  "repository": "https://github.com/gongdol/claude-code-turbocharge",
+  "keywords": [
+    "claude-code",
+    "memory",
+    "tdd",
+    "e2e",
+    "testing",
+    "productivity"
+  ],
+  "engines": {
+    "claude-code": ">=1.0.0"
+  },
+  "dependencies": {
+    "oh-my-claudecode": ">=3.0.0"
+  },
+  "skills": [
+    "skills/memory-sync.md",
+    "skills/tdd-guard.md",
+    "skills/e2e-test.md",
+    "skills/turbo-check.md"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.mjs\""
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/tdd-guard.mjs\""
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/memory-save.mjs\""
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/session-end.mjs\""
+      }
+    ]
+  },
+  "agents": [
+    "agents/memory-keeper.md",
+    "agents/tdd-enforcer.md",
+    "agents/e2e-runner.md"
+  ],
+  "commands": []
+}
