@@ -414,8 +414,8 @@ MIT License - 자유롭게 사용, 수정, 배포할 수 있습니다.
 
 ## 📮 연락처
 
-- **GitHub Issues**: [Issues](https://github.com/gongdol/claude-code-turbocharge/issues)
-- **Discussions**: [Discussions](https://github.com/gongdol/claude-code-turbocharge/discussions)
+- **GitHub Issues**: [Issues](https://github.com/scokeepa/claude-code-turbocharge/issues)
+- **Discussions**: [Discussions](https://github.com/scokeepa/claude-code-turbocharge/discussions)
 
 ---
 

@@ -4,7 +4,7 @@
   "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
   "author": "gongdol",
   "license": "MIT",
-  "repository": "https://github.com/gongdol/claude-code-turbocharge",
+  "repository": "https://github.com/scokeepa/claude-code-turbocharge",
   "keywords": [
     "claude-code",
     "memory",
