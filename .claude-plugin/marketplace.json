@@ -1,0 +1,11 @@
+{
+  "name": "claude-code-turbocharge",
+  "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
+  "plugins": {
+    "claude-code-turbocharge": {
+      "path": ".",
+      "version": "1.0.0",
+      "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인"
+    }
+  }
+}
