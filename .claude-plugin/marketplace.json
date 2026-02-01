@@ -1,11 +1,32 @@
 {
   "name": "claude-code-turbocharge",
-  "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
-  "plugins": {
-    "claude-code-turbocharge": {
-      "path": ".",
+  "owner": {
+    "name": "scokeepa"
+  },
+  "metadata": {
+    "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
+    "version": "1.0.0",
+    "homepage": "https://github.com/scokeepa/claude-code-turbocharge"
+  },
+  "plugins": [
+    {
+      "name": "claude-code-turbocharge",
+      "source": "./plugins/claude-code-turbocharge",
+      "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인",
       "version": "1.0.0",
-      "description": "Claude Code 터보차지 - 메모리 동기화, TDD 강제, E2E 테스트 통합 플러그인"
+      "author": {
+        "name": "scokeepa"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/scokeepa/claude-code-turbocharge",
+      "keywords": [
+        "memory",
+        "tdd",
+        "e2e",
+        "testing",
+        "productivity",
+        "turbocharge"
+      ]
     }
-  }
+  ]
 }
